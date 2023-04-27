@@ -1,0 +1,15 @@
+Aim :- Installation and Configuration of virtualization using KVM 
+Installation Steps : 
+sudo grep -c "svm\|vmx" /proc/cpuinfo
+cat /proc/cpuinfo
+sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virt-manager
+Run following command you should see an empty list of virtual machines. This indicates that everything is working correctly. 
+virsh -c qemu:///system list
+Open Virtual Machine Manager application and Create Virtual Machine
+virt-manager 
+
+
+Ubuntu 16.4 trial
+ sudo apt install -y qemu-kvm libvirt0 libvirt-bin virt-manager bridge-utils
+sudo apt-get install qemu-kvm libvirt-bin virtinst bridge-utils cpu-checker
+
